@@ -1,0 +1,9 @@
+.--svg__arrow-right,.--svg__arrow-right-before::before,.--svg__arrow-right-after::after{
+    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='20' height='20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.667 8.416v3.816c0 1.19 1.32 1.907 2.319 1.256l3.122-2.035a1.5 1.5 0 00-.076-2.56L8.91 7.113a1.5 1.5 0 00-2.244 1.303z' fill='%23E6620D'/%3E%3C/svg%3E");
+}
+.--svg__arrow-right-before::before {
+    content:'';
+}
+.--svg__arrow-right-after::after {
+    content:'';
+}

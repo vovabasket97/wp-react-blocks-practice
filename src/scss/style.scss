@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'base/*';
+@import 'global/*';
+
+@import 'libs/*'; // libs modification
+
+@import '_local-fonts.scss';
+

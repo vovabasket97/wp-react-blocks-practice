@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  &::-webkit-scrollbar {
+    width: 2px;
+    transition: width 0.3s;
+  }
+  &::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    @apply bg-main;
+    border-radius: 2px;
+    height: 15%;
+    transition: all 0.3s;
+  }
+  @media (max-width: $xs) {
+    &::-webkit-scrollbar {
+      width: 0;
+      display: none;
+    }
+  }
+}
+
+html,
+body {
+  @apply text-black bg-white relative font-normal;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  &:has(.popup-box.active) {
+    @apply overflow-hidden;
+  }
+  .header {
+    @apply top-0 flex;
+  }
+  &::-webkit-scrollbar-thumb {
+    @apply bg-gray;
+  }
+  &::-webkit-scrollbar-track {
+    @apply bg-bg-second;
+  }
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+}
+
+.iti__flag {
+  background-image: url("../modules/intl-tel-input/img/flags.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {
+    background-image: url("../modules/intl-tel-input/img/flags@2x.png");
+  }
+}
+
+textarea {
+  resize: none !important;
+}
+
+button[type="submit"][disabled="true"] {
+  pointer-events: none;
+}
+
+li p,
+ol p {
+  margin: 0 !important;
+}
+
+input {
+  @apply outline-none;
+}
+
+body.page-parent.page-portfolio {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.home main.content {
+  overflow: initial;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  &:empty {
+    display: none;
+  }
+}
