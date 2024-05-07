@@ -14,7 +14,8 @@ exports.build = gulp.parallel(
   tasks.style,
   tasks.dev_js,
   tasks.rastr,
-  tasks.html
+  tasks.html,
+  tasks.blocks
 );
 
 exports.dev = gulp.series(

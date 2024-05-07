@@ -9,10 +9,9 @@ module.exports = function html() {
     .pipe(include())
     .pipe(
       rename(function (path) {
-        if(path.basename === 'index') path.basename = "configurator";
         path.extname = ".php";
       })
     )
-    .pipe(dest(options.paths.build.configurator))
+    .pipe(dest(options.paths.build.base))
     .pipe(bs.stream());
 };

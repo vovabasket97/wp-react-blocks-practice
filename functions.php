@@ -156,3 +156,11 @@ require get_template_directory() . '/inc/template-tags.php';
  * Functions which enhance the theme by hooking into WordPress.
  */
 require get_template_directory() . '/inc/template-functions.php';
+
+/**
+ * Activation blocks
+ */
+function blocks_init() {
+	register_block_type( __DIR__ . '/build/blocks/first-block' );
+}
+add_action( 'init', 'blocks_init' );

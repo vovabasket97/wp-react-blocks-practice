@@ -8,11 +8,12 @@ module.exports = {
     root: "./",
     src: {
       base: "./src",
+      blocks: './src/blocks',
       scss: "./src/scss",
       js: "./src/js",
       img: "./src/img",
       fonts: "./src/fonts/",
-      configurator: "./src/configurator/",
+      components: "./src/components/",
       cart: "./src/cart/"
     },
     build: {
@@ -21,7 +22,7 @@ module.exports = {
       js: "./build/js",
       img: "./build/img",
       fonts: "./build/fonts/",
-      configurator: "./parts",
+      components: "./build/components",
       cart: "./parts",
     },
   },
