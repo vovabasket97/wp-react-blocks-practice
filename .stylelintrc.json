@@ -1,0 +1,16 @@
+{
+	"extends": ["stylelint-config-recommended", "stylelint-config-tailwindcss", "stylelint-scss"],
+	"rules": {
+		"property-no-unknown": [
+			true,
+			{
+				"ignoreProperties": ["font-path"]
+			}
+		],
+		"at-rule-no-unknown": null,
+		"no-descending-specificity": null,
+		"no-empty-source": null
+	},
+	"syntax": "scss",
+	"ignoreFiles": ["**/*.+(js|jsx|json|css)"]
+}

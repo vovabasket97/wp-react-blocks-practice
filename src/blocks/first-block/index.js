@@ -1,18 +1,11 @@
-import { registerBlockType } from "@wordpress/blocks";
-import { useBlockProps } from "@wordpress/block-editor";
+import { registerBlockType } from '@wordpress/blocks'
 
-import "./editor.scss";
-import "./style.scss";
+import Edit from './edit'
+import './editor.scss'
+import Save from './save'
+import './style.scss'
 
-registerBlockType("blocks-course/firstblock", {
-  edit: function () {
-    const elementProps = useBlockProps();
-
-    return <p {...elementProps}>Edit</p>;
-  },
-  save: function () {
-    const elementProps = useBlockProps.save();
-
-    return <p {...elementProps}>Save</p>;
-  },
-});
+registerBlockType('blocks-course/firstblock', {
+  edit: Edit,
+  save: Save,
+})
